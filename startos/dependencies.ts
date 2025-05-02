@@ -14,7 +14,6 @@ export const setDependencies = sdk.setupDependencies(async ({ effects }) => {
 
   if (active_node_alias === 'bitcoin_core') {
     await sdk.action.request(effects, 'bitcoind', config, 'critical', {
-      // @TODO Aiden value should be recursively partial
       input: {
         kind: 'partial',
         value: {
@@ -30,7 +29,7 @@ export const setDependencies = sdk.setupDependencies(async ({ effects }) => {
     await sdk.action.request(effects, 'bitcoind', rpcConfig, 'critical', {
       input: { kind: 'partial', value: { threads: 4 } },
       when: { condition: 'input-not-matches', once: false },
-      reason: 'Bitcoin RPC must be enabled with 4 or more threads',
+      reason: 'Bitcoin RPC must use 4 or more threads',
     })
 
     return {

@@ -18,8 +18,7 @@ export const manifest = setupManifest({
   images: {
     specter: {
       source: {
-        dockerTag:
-          'lncm/specter-desktop:v2.1.1',
+        dockerTag: 'lncm/specter-desktop:v2.1.1',
       },
     },
   },
@@ -37,13 +36,13 @@ export const manifest = setupManifest({
       optional: true,
       description:
         'Needed if you want to connect Specter to your StartOS Bitcoin node.',
-      s9pk: 'https://github.com/Start9Labs/bitcoind-startos/releases/download/v28.1.0.0-alpha.3/bitcoind.s9pk',
+      s9pk: 'https://github.com/Start9Labs/bitcoind-startos/releases/download/v28.1.0.0-alpha.2/bitcoind.s9pk',
     },
     elctrs: {
       optional: true,
       description:
         'Needed if you want to connect Specter to your StartOS electrs server',
-      s9pk: 'https://github.com/Start9Labs/bitcoind-startos/releases/download/v28.1.0.0-alpha.3/bitcoind.s9pk',
+      s9pk: 'https://github.com/Start9Labs/bitcoind-startos/releases/download/v28.1.0.0-alpha.2/bitcoind.s9pk',
     },
   },
 })

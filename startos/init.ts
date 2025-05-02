@@ -40,10 +40,11 @@ const postInstall = sdk.setupPostInstall(async ({ effects }) => {
 
       let cfgExists = false
       for (let i = 0; i < 10 && !cfgExists; i++) {
-        cfgExists = !!(await configJson.read.once())
         await new Promise((resolve) => setTimeout(resolve, 4000))
+        cfgExists = !!(await configJson.read.once())
+        if (cfgExists) break
       }
-      if (!cfgExists) throw new Error('Failed to initialize Jam')
+      if (!cfgExists) throw new Error('Failed to initialize Specter')
     },
   )
 

@@ -46,6 +46,6 @@ const shape = object({
 }).onMismatch(bitcoinCoreDefaultConfig)
 
 export const bitcoinCoreJson = FileHelper.json(
-  '/media/startos/volumes/main/nodes/bitcoin_core.json',
+  '/media/startos/volumes/main/.specter/nodes/bitcoin_core.json',
   shape,
 )

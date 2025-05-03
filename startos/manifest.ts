@@ -38,7 +38,7 @@ export const manifest = setupManifest({
         'Needed if you want to connect Specter to your StartOS Bitcoin node.',
       s9pk: 'https://github.com/Start9Labs/bitcoind-startos/releases/download/v28.1.0.0-alpha.2/bitcoind.s9pk',
     },
-    elctrs: {
+    electrs: {
       optional: true,
       description:
         'Needed if you want to connect Specter to your StartOS electrs server',

@@ -9,7 +9,7 @@ This app is now available at the official **Start9 Community Marketplace**:
 
 There you can install the prebuilt release package from the marketplace without building it. 
 
-If you want to build Specter Wrapper youself, follow these steps:
+If you want to build Specter Wrapper yourself, follow these steps:
 
 
 ## Start9 Service Pre-Requisites

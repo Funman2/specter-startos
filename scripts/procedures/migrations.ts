@@ -27,4 +27,4 @@ export const migration: T.ExpectedExports.migration = compat.migrations
       down: compat.migrations.updateConfig(_ => { throw new Error("Downgrade unavailable") }, true, { version: "2.0.2.2", type: "down" })
     }
   }
-  , "2.1.1" );
+  , "2.1.1.2" );

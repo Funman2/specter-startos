@@ -1,10 +1,10 @@
 id: specter 
 title: Specter
-version: 2.1.1
+version: 2.1.1.2
 release-notes: |
-  * Updated to Specter Desktop v2.1.1
+  * Updated to Specter Desktop v2.1.1 multiplattform (OS/arch/x86)
   * Support for Bitcoin Core v28.x and v29.x
-  * Improved hardware wallet and multisig experience
+  * Cross plattform build process available
 developer: "Alex71btc (https://github.com/Alex71btc)"
 license: mit
 wrapper-repo: https://github.com/Alex71btc/specter-startos
